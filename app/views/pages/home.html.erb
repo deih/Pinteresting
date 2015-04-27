@@ -1,4 +1,11 @@
 <div class="jumbotron">
 <h1>Welcome to the copy of Pinterest!</h1>
-	Nice, huh? <%= link_to "Sign Up now!", about_path, class: "btn btn-success" %>
+	  <% if user_signed_in? %>
+         <%= link_to "Add Pin", "#", class: "btn btn-default btn-lg" %>
+     <% else %>
+       <p>
+         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+       </p>
+  <% end %>  
 </div>

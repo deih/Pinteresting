@@ -1,7 +1,7 @@
 <div class="jumbotron">
 <h1>Welcome to the copy of Pinterest!</h1>
 	  <% if user_signed_in? %>
-         <%= link_to "Add Pin", "#", class: "btn btn-default btn-lg" %>
+         <%= link_to "Add Pin", new_pin_path, class: "btn btn-default btn-lg" %>
      <% else %>
        <p>
          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>

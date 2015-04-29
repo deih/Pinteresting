@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+gem 'will_paginate-bootstrap'
+gem 'will_paginate', '~> 3.0.5'
 gem 'masonry-rails'
 gem 'paperclip', '~> 4.2'
 gem 'devise'
